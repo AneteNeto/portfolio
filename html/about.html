@@ -5,42 +5,87 @@
      <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
-    <header class="header">
-      <p>NETO Anete</p>
-      <nav id="nav">
-        <ul>
-          <li><a href="../index.html">Accueil</a></li>
-          <li><a href="about.html">À propos</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contacts</a></li>
-        </ul>
-      </nav>
-    </header>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="../index.html"><p>Anete Neto</p></a>
+        </div><!--logo-->
+        <nav class="nav">
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            
+          </ul>
+        </nav>
+        <div class="contact-btn">
+          <a href="contact.html"><button>Contact</button></a>
+        </div><!--contact-btn-->
+      </div><!--container-->
+     </header>
+
     <div class="container">
-        <div id="skill">
+      <h1><span>#</span>About me</h1><hr>
+      <div class="flex">
+        <div class="propos">
+          <h5>Who am i?</h5>
           <p>La science des données est un terme générique qui recouvre tous les 
             aspects du traitement des données, de la collecte, en passant par la
              modélisation, jusqu'aux informations. 
             D'autre part, l'analytique des données concerne principalement les 
             statistiques, les mathématiques et l'analyse statistique.</p>
-            
-            <h3>SKILLS</h3>
-            <ul>
-            <li>PostgreSQL</li>
-              <li>MySql</li>
-              <li>SqlServer</li>
-              <li>C++</li>
-              <li>Developpement Mobile</li>
-          </ul>
-      </div>
-      <div>
-        <video width="400" height="280" controls autoplay>
-          <source src="movie.mp4" type="video/mp4">
-          <source src="movie.ogg" type="video/ogg">
-        Your browser does not support the video tag.
-        </video>
-      </div>
+            <p>La science des données est un terme générique qui recouvre tous les 
+              aspects du traitement des données, de la collecte, en passant par la
+               modélisation, jusqu'aux informations. 
+              D'autre part, l'analytique des données concerne principalement les 
+              statistiques, les mathématiques et l'analyse statistique.</p>
+        </div><!--propos-->
+        <div class="video">
+          <video width="700" height="480" controls autoplay>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+        </div><!--video-->
+      </div><!--flex-->
+      <h2><span>#</span>Skills</h2>
+        <div class="skill">
+            <table>
+              <th>Languages</th>
+               <tr><td>Kotlin</td></tr>
+               <tr><td>C++</td></tr>
+               <tr><td>Python</td></tr>
+           </table>
+            <table>
+              <th>Databases</th>
+               <tr><td>PostgreSQL</td></tr>
+               <tr><td>Sqlserver</td></tr>
+               <tr><td>MySql</td></tr>
+               <tr><td>MongoDB</td></tr>
+           </table>
+            <table>
+              <th>FrameWorks</th>
+                 <tr><td>Django</td></tr>
+                 <tr><td>React Native</td></tr>
+             </table>
+            <table >
+              <th>Others</th>
+                <tr><td>HTML</td></tr>
+                <tr><td>CSS</td></tr>    
+            </table>
+            <table >
+              <th>Tools</th>
+                <tr><td>Vscode</td></tr>
+                <tr><td>Git</td></tr>    
+            </table>
+      </div><!--skill-->
+    <div class="fun">
+      <h2><span>#</span>my-fun-facts</h2>
+      <span>I'm fascinated by the sea</span> <span>I'm afraid of heights.</span>
+      <br> 
+      <span>I'm passionate about Korean culture</span>
+      <span>I'm a stay-at-home  girl</span>
     </div>
-   </div>
+    </div><!--containeer-->
   </body>
 </html>

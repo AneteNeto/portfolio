@@ -1,44 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 /*GENERAL STYLE*/
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: 'Poppins', sans-serif;   
+  font-family: 'Fira Code', monospace;
 }
 body{
-background: #111;
+background: #282C33;
 color:#fff;
 }
 a{
   text-decoration:none;
-  color:#fff;
+  color:#ABB2BF;
 }
+
 .container{
- // margin:0 auto;
-  max-width:1280px;
+  padding:10px 5%;
 }
-/* HEADER ,MENU PART*/
-header{  
-  padding:20px 5%;
-}
-header >.container{
+.flex{
   display:flex;
-  justify-content:space-between;
-  align-items:center;
+}
+/* -------------------HEADER ,MENU PART---------------------------------------------*/
+header > .container{
+  display:flex;
+  justify-content:space-between;  
 }
 
 header .logo p{
-  font-size:25px;
   font-weight:500;
 }
 header .logo p::first-letter{
   color:#fa7f72;
-  font-size:35px; 
+  font-size:20px; 
 }
 
-.nav ul li{
+ ul li{
   list-style:none;
   display:inline-block;
 }
@@ -49,9 +47,10 @@ header a{
 }
 header a:hover{
   transform:scale(1.08);
+  color:#fff;
 }
 header .container button{
-  padding:10px 16px;
+  padding:8px 12px;
   border-radius:8px ;
   font-size:16px;
   background-color:#fa7f72;
@@ -59,5 +58,88 @@ header .container button{
   cursor:pointer;//change le cursor para o de link
 }
 header .container button:hover{
-  box-shadow:0px 0px 3px #fa897d;
+  box-shadow:0px 0px 2px #fa897d;
+}
+
+.container .flex{
+  align-items:center;
+  justify-content: space-between;
+}
+/* -------------------PRESENTANTION PART---------------------------------------------*/
+.container .pres {
+  max-width: 600px;
+  margin-left:10%;
+  font-style: normal;
+  line-height: normal;
+  font-size:22px;
+  
+}
+.container .pres p{
+color: #FFF;
+font-weight: 600;
+text-align: left;
+margin-bottom:20px;
+}
+
+.container .pres span{
+  color: #fa7f72; 
+}
+
+.container .pres a {
+  border:1px solid #fa7f72;
+  padding:8px 16px;
+  border-radius:8px;
+  font-size:14px;
+}
+.container .pres a:hover{
+  transform:scale(1.08);
+  color:#fff;
+  background:#fa7f72;
+  border-color: #282C33;
+}
+.container #avatar{
+  width:350px;
+  height:auto;
+  display:flex;
+}
+/* -------------------À PROPOS PARTE---------------------------------------------*/
+
+.container >.flex{
+  align-items:center;
+  justify-content:espace-between;
+}
+.propos h5{
+  color:#fa7f72;
+  margin-bottom:50px;
+}
+.propos p{
+  text-align: left;
+  padding:10px;
+}
+video{
+  border-radius:20px;
+  margin-top:50px;
+}
+.container .skill{
+  margin-top:50px; 
+  display:flex;
+  justify-content:espace-between;
+}
+table{
+  width:150px;
+}
+table,th{
+  border-collapse:collapse;
+  border: 1px solid #ABB2BF;
+  padding: 0 5px;
+  text-align:left;
+}
+.fun > span{
+  border: 1px solid #ABB2BF;
+  padding:2px 8px;
+  font-size:12px; 
+}
+
+:is(h1,h2) span{
+  color:#fa7f72;
 }
