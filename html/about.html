@@ -2,94 +2,109 @@
 <html lang="fr">
   <head>
      <meta charset="UTF-8">
-     <link rel="stylesheet" href="../css/style.css">
+     <link rel="stylesheet" href="../css/main.css">
+     <link rel="stylesheet" href="../css/about.css">
+     <link href="../css/all.min.css" rel="stylesheet"> 
+     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
      <title>Portfolio Anete</title>
   </head>
   <body>
+ 
     <header>
       <div class="container">
         <div class="logo">
           <a href="../index.html"><p>AneteNETO</p></a>
         </div><!--logo-->
-        <div class="nav">
-          <nav>
-            <ul>
-              <li><a href="../index.html">Accueil</a></li>
-              <li><a href="about.html">À propos</a></li>
-              <li><a href="projects.html">Project</a></li>  
-            </ul>
-          </nav>
+          <div class="nav">
+            <nav>
+              <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>  
+              </ul>
+            </nav>
+          </div><!--nav-->
+          <div class="contact-btn">
+           <a href="contact.html">Contact</a>
+          </div><!--contact-btn-->
+        <div class="menu-icon" id="btn-menu">
+          <i class="fa-regular fa-bars"></i>
         </div>
-        <div class="contact-btn">
-         <a href="contact.html">Contact</a>
-        </div><!--contact-btn-->
+        
+        <div class="menu-mobile" id="menu-mobile">
+          <div class="menu-close" id="btn-close">
+            <i class="fa-regular fa-xmark"></i>
+          </div>
+            <nav>
+              <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li> 
+                <li><a href="contact.html">Contact</a></li>  
+              </ul>
+            </nav>
+        </div><!--menu-mobile-->
       </div><!--container-->
      </header>
 
     <div class="container">
       <h1><span>#</span>About me</h1><hr>
       <div class="flex">
-        <div class="propos">
-          <h5>Who am i?</h5>
-          <p>La science des données est un terme générique qui recouvre tous les 
-            aspects du traitement des données, de la collecte, en passant par la
-             modélisation, jusqu'aux informations. 
-            D'autre part, l'analytique des données concerne principalement les 
-            statistiques, les mathématiques et l'analyse statistique.</p>
-            <p>La science des données est un terme générique qui recouvre tous les 
-              aspects du traitement des données, de la collecte, en passant par la
-               modélisation, jusqu'aux informations. 
-              D'autre part, l'analytique des données concerne principalement les 
-              statistiques, les mathématiques et l'analyse statistique.</p>
+        <div class="about">
+          <p>Anete Neto, a dedicated student pursuing a Bachelor's degree in Networks 
+            and Telecommunications. Her journey took a significant turn in June 2023 when she embraced the challenge o
+             f studying abroad in France, demonstrating her adaptability and resilience. 
+             Alongside her academic endeavors, Anete has a solid background in mobile app development, 
+             particularly in Android, and valuable experience as a database administrator. 
+             Her personal description underscores her determination, independence, 
+             and the ability to forge deep connections with others, despite her introverted nature.
+            </p>
+            <p>In summary, Anete Neto's academic journey, professional experience, 
+              and personal qualities make her a promising student with a bright 
+              future in the field of Networks and Telecommunications. 
+              Her pursuit of knowledge, coupled with a passion for overcoming challenges, 
+              positions her for success as she continues to grow and make a meaningful impact.</p>
         </div><!--propos-->
-	
-	
-        <div class="video">
-          <video width="100%" height="480" controls>
+          <video id="videos" controls>
             <source src="../assets/self_apresentation.mp4" type="video/mp4">
+            <track label="Portugues" kind="subtitles" srclang="pt" src="../assets/legends-pt.vtt"> 
+            <track label="Anglais" kind="subtitles" srclang="embraced" src="../assets/legends-in.vtt" >
+            <track label="Francais" kind="subtitles" srclang="fr" src="../assets/legends-fr.vtt" >
             Your browser does not support the video tag.
           </video>
-        </div><!--video-->
-	
       </div><!--flex-->
+
       <h2><span>#</span>Skills</h2>
         <div class="skill">
-            <table>
-              <th>Languages</th>
-               <tr><td>Kotlin</td></tr>
-               <tr><td>C++</td></tr>
-               <tr><td>Python</td></tr>
-           </table>
-            <table>
-              <th>Databases</th>
-               <tr><td>PostgreSQL</td></tr>
-               <tr><td>Sqlserver</td></tr>
-               <tr><td>MySql</td></tr>
-               <tr><td>MongoDB</td></tr>
-           </table>
-            <table>
-              <th>FrameWorks</th>
-                 <tr><td>Django</td></tr>
-                 <tr><td>React Native</td></tr>
-             </table>
-            <table >
-              <th>Others</th>
-                <tr><td>HTML</td></tr>
-                <tr><td>CSS</td></tr>    
-            </table>
-            <table >
-              <th>Tools</th>
-                <tr><td>Vscode</td></tr>
-                <tr><td>Git</td></tr>    
-            </table>
+          <div class="table">
+            <h4>Languages</h4>
+               <p>Kotlin</p>
+               <p>C++</p>
+               <p>Python</p>
+          </div>
+          <div class="table">
+              <h4>Databases</h4>
+               <p>PostgreSQL</p>
+               <p>Sqlserver</p>
+               <p>MySql</p>
+               <p>MongoDB</p> 
+          </div>
+          <div class="table">
+            <h5>Others</h5>
+               <p>JavaScript</p>
+               <p>React Native</p>
+               <p>HTML</p>
+               <p>CSS</p>  
+          </div>
       </div><!--skill-->
-    <div class="fun">
-      <h2><span>#</span>my-fun-facts</h2>
-      <span>I'm fascinated by the sea</span> <span>I'm afraid of heights.</span>
-      <br> 
-      <span>I'm passionate about Korean culture</span>
-      <span>I'm a stay-at-home  girl</span>
-    </div>
+      <div class="fun">
+        <h2><span>#</span>My-fun-facts</h2>
+        <span>I'm fascinated by the sea</span> <span>I'm afraid of heights.</span>
+        <br> 
+        <span>I'm passionate about Korean culture</span>
+        <span>I'm a stay-at-home  girl</span>
+      </div>
     </div><!--containeer-->
+    <script src="../menu.js"> </script>
   </body>
 </html>

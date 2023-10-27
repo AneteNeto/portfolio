@@ -1,0 +1,131 @@
+/*GENERAL CSS APPLIED TO ALL PAGES*/
+@font-face{
+	font-family:"Poppins";
+	src:url("../webfonts/Poppins-Regular.ttf")  format("truetype");
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', 'sans serif';
+}
+
+:root {
+  --main-bg-color:#282C33;
+  --primary-color:#fa7f72;
+  --text-color:#ABB2BF;
+  --white-color:#fff;
+}
+
+body{
+  background:var(--main-bg-color);
+  color:var(--white-color);
+  width:100%;
+  font-size: 16px;
+}
+a{
+  text-decoration:none;
+  color:var(--text-color);
+}
+ul li{
+  list-style:none;
+}
+.container{
+	padding:30px 5%;
+	margin: 0 auto;
+}
+.flex{
+  display:flex;
+  justify-content: space-around;
+}
+/* -------------------HEADER ,MENU PART---------------------------------------------*/
+header{
+  padding:30px 0;
+}
+header > .container{
+  display:flex;
+  justify-content:space-between;  
+}
+
+.logo p{
+  font-weight:500;
+}
+.logo p::first-letter{
+  color:var(--primary-color);
+  font-size:1.25rem; 
+}
+
+ .nav ul li{
+  list-style:none;
+  display:inline-block;
+}
+.nav a{
+  padding:8px 18px;
+  display:inline-block;
+  transition:1.7s;
+}
+header .nav  a:hover{
+  transform:scale(1.08);
+  color:var(--white-color);
+}
+.contact-btn a{
+  padding:8px 12px;
+  border-radius:8px;
+  font-size:1rem;
+  color:#000;
+  background-color:var(--primary-color);
+}
+.contact-btn a{
+  box-shadow:0px 0px 2px #fa897d;
+} 
+
+/*MOBILE PART*/
+.menu-mobile{
+  background-color:#24272d;
+  height:100vh;
+  top:0;
+  right:0;
+  position:fixed;
+  width:0%;
+  overflow:hidden; 
+  transition:0.7s; 
+}
+.menu-icon i{
+  color:var(--primary-color);
+  font-size:2.2rem;
+}
+.menu-icon{
+  display: none;
+}
+.menu-mobile.open-menu{
+  width:70%;
+}
+.menu-mobile .menu-close{
+  padding:30px 4%;
+}
+.menu-mobile .menu-close i{
+  color:var(--primary-color);
+  font-size:2.2rem;
+}
+.menu-mobile nav ul{
+  text-align:right;
+}
+.menu-mobile nav ul li a{
+  font-size:1.2rem;
+  padding:15px 5%;
+  font-weight:300;
+  display:block;
+}
+.menu-mobile nav ul li a:hover{
+  background-color:var(--primary-color);
+  color:var(--white-color);
+}
+
+@media (max-width: 900px){
+  .nav,.contact-btn{
+    display:none;
+  }
+  .menu-icon{
+    display: block;
+ }
+}

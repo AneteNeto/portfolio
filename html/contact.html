@@ -2,7 +2,10 @@
 <html lang="fr">
   <head>
      <meta charset="UTF-8">
-     <link rel="stylesheet" href="../css/style.css">
+     <link rel="stylesheet" href="../css/main.css">
+     <link rel="stylesheet" href="../css/contact.css">
+     <link href="../css/all.min.css" rel="stylesheet"> 
+     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
      <title>Portfolio Anete</title>
   </head>
   <body>
@@ -16,17 +19,62 @@
             <ul>
               <li><a href="../index.html">Accueil</a></li>
               <li><a href="about.html">À propos</a></li>
-              <li><a href="projects.html">Projects</a></li>  
+              <li><a href="projets.html">Projets</a></li>  
             </ul>
           </nav>
-        </div>
+        </div><!--nav-->
         <div class="contact-btn">
          <a href="contact.html">Contact</a>
         </div><!--contact-btn-->
+        <div class="menu-icon" id="btn-menu">
+          <i class="fa-regular fa-bars"></i>
+        </div>
+        <div class="menu-mobile" id="menu-mobile">
+          <div class="menu-close" id="btn-close">
+            <i class="fa-regular fa-xmark"></i>
+          </div>
+            <nav>
+              <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li> 
+                <li><a href="contact.html">Contact</a></li>  
+              </ul>
+            </nav>
+        </div><!--menu-mobile-->
       </div><!--container-->
      </header>
      <div class="container">
-      <h1><span>#</span>Contact</h1><hr>
+        <h1><span>#</span>Contact</h1><hr>
+        <div class="content">
+          <div class="box">
+            <p class="desc">
+              Pour en savoir plus sur moi, n'hésitez pas à me contacter
+            </p>
+            <div class="icons">
+              <a href="https://www.linkedin.com/in/anete-neto-625409214/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/AneteNeto" target="_blank">
+                <i class="fa-brands fa-square-github"></i>
+              </a>
+              <a href="https://discord.com/channels/780721465636159528  " target="_blank">
+                <i class="fa-brands fa-discord"></i>
+              </a>
+            </div>
+            <div class="contacts">
+              <a href="mailto:anetebuconeto@gmail.com">
+                <p><i class="fa-solid fa-envelope"></i> anetebuconeto@gmail.com</p>
+              </a>
+              <a href="tel:33">
+                <p><i class="fa-solid fa-phone"></i> +33 734 482 482 8</p>
+              </a>
+            </div>
+          </div>
+        </div>
      </div>
+
+     
+     <script src="../menu.js"> </script>
   </body>
 </html>

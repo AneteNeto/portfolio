@@ -2,11 +2,15 @@
 <html lang="fr">
   <head>
      <meta charset="UTF-8">
-     <link rel="stylesheet" href="css/style.css">
-     <link href="css/all.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="css/accueil.css">
+     <link href="css/all.min.css" rel="stylesheet"> <!--appel de la police Fontawesome-->
+     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
      <title>Portfolio Anete</title>
+     
   </head>
   <body>
+
      <header>
       <div class="container">
         <div class="logo">
@@ -17,31 +21,55 @@
             <ul>
               <li><a href="index.html">Accueil</a></li>
               <li><a href="./html/about.html">À propos</a></li>
-              <li><a href="./html/projects.html">Project</a></li>  
+              <li><a href="./html/projets.html">Projects</a></li>  
             </ul>
           </nav>
         </div><!--nav-->
         <div class="contact-btn">
          <a href="./html/contact.html">Contact</a>
         </div><!--contact-btn-->
+        
+        <div class="menu-icon" id="btn-menu">
+          <i class="fa-regular fa-bars"></i>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+          <div class="menu-close" id="btn-close">
+            <i class="fa-regular fa-xmark"></i>
+          </div>
+            <nav>
+              <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="./html/about.html">À propos</a></li>
+                <li><a href="./html/projets.html">Projets</a></li> 
+                <li><a href="./html/contact.html">Contact</a></li>  
+              </ul>
+            </nav>
+        </div><!--menu-mobile-->
       </div><!--container-->
-     </header>
+     </header><!--header-->
+
      <main>
       <div class="container">
         <div class="flex">
           <div class="pres">
             <h1>Bienvenue</h1>
-            <p>Moi, je suis --><span>Anete NETO</span>  une dévelloppeuse de base de données,  mobile
+            <p>Moi, je suis <span>Anete NETO</span>  une dévelloppeuse de la base de données,du mobile
               et étudiante en réseaux et Télecomunications
             </p>
-	    <div class="btns">
-		    <a href="./html/contact.html">Contactez-moi</a>
-		    <a href="./html/about.html">Vidéo de présentation</a>
-	    </div><!--button-->
+
+            <div class="buttons">
+              <p><a href="./html/about.html">Vidéo de présentation</a></p>
+              <p><a href="./html/contact.html">Contactez-moi</a></p>
+    
+            </div><!--button-->
+           </div><!--pres-->
+           <div class="ava">
+              <img  id="avatar" src ="./assets/undraw_programmer.svg" alt="Avatar d'une dévelloppeuse assis devant l'ordinateur avec une tasse de café à la main">
            </div>
-           <div><img id="avatar"  src ="./assets/undraw_programmer.svg" alt="Avatar d'un programmeur assis devant l'ordinateur avec une tasse de café à la main"></div> 
-         </div><!--container-->
-        </div>
+         </div><!--flex-->
+      </div><!--container-->
      </main>
+     <script src="menu.js"> </script>
   </body>
 </html>
