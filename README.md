@@ -2,6 +2,9 @@
 
 
 Portfolio Web site
+<p>
+  <img src="assets/site.png">
+</p>
 
 ## 🚀 Technologies:
 
